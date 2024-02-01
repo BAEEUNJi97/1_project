@@ -9,6 +9,8 @@
 | 이정훈 |    HTML, javascript, css    |    IntelliJ IDEA , vim      |  
 | 김정승 |    HTML, javascript, css    |    IntelliJ IDEA , vim      |  
 | 배은지 |    HTML, javascript, css    |    IntelliJ IDEA , vim      |   
+
+[AWS 실행환경](http://3.145.89.201:3000)
     
 ### 프로젝트개요
 + 기간 : 2024.01.12(금) ~ 2024.01.18(목)
