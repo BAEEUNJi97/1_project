@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+</head>
+    <style>
+        header{
+            background-color: black;
+            color:white;
+            text-align: center;
+            padding: 100px;
+            /*border: 1px solid black;*/
+        }
+        nav{
+            background-color: white;
+            color: green;
+            text-align: center;
+        }
+
+        nav li{
+            list-style: none;
+            display:inline;
+            padding: 70px;
+            font-size: 20px;
+            color: green;
+            font-weight: bold;
+        }
+        nav p{
+            text-align: left;
+        }
+
+        nav p #btn{
+            text-align: center;
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        section ul{
+            margin-top: 20px;
+        }
+
+        section ul a img{
+            width: 250px;
+            heigh: 500px;
+            border-radius: 20px;
+            display: inline;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+<body>
+<script>
+    $(document).ready(function(){
+        // 동영상 요소에 마우스 호버 이벤트 추가
+        $("#myVideo").hover(
+            function(){
+                // 호버 시 실행할 코드
+                var videoUrl = $(this).find("source").attr("src");
+                $("#url").text(videoUrl);
+                $("#video-info").fadeIn();
+            },
+            function(){
+                // 호버가 끝날 때 실행할 코드
+                $("#url").text("");
+                $("#video-info").fadeOut();
+            }
+        );
+    });
+</script>
+    <header>
+        <h1>코드랩 무비</h1>
+    </header>
+    <nav>
+        <p>
+            <button id="btn"><a href="codelap-movie-popul.html" target="_blank">추천순위</button>
+        </p>
+        <ul>
+            <li>랭킹</li>
+            <li><a href="#korea">한국</li>
+            <li><a href="#english">해외</li>
+            <li>로맨스</li>
+            <li>액션</li>
+            <li>호러</li>
+        </ul>
+    </nav>
+
+    <section>
+        <ul>
+            <h3 id="korea">한국영화</h3>
+            <a href="https://www.youtube.com/embed/8DtrRadXsjI"><img src = "images/kor_1.jpg" id="hover"></a>
+            <a href="https://www.youtube.com/embed/DG7R5FMwoAM"><img src = "images/kor_2.jpg" id="hover"></a>
+            <a href="https://www.youtube.com/embed/rvcN5uFf_VI"><img src = "images/kor_3.jpg" id="hover"></a>
+            <a href="https://www.youtube.com/embed/E-LkaQgj0qM"><img src = "images/kor_4.jpg" id="hover"></a>
+            <a href="https://www.youtube.com/embed/PG7ftMRWO9c"><img src = "images/kor_5.jpg" id="hover"></a>
+            <a href="https://www.youtube.com/embed/3PWIFA-ulP0"><img src = "images/kor_6.jpg" id="hover"></a>
+            <a href="https://www.youtube.com/embed/DYE2aDl2RhI"><img src = "images/kor_7.jpg" id="hover"></a>
+            <a href="https://www.youtube.com/embed/JfGpTWM-TNk"><img src = "images/kor_8.jpg" id="hover"></a>
+            <a href="https://www.youtube.com/embed/bETrnbq_OLM"><img src = "images/kor_9.jpg" id="hover"></a>
+        </ul>
+
+        <ul>
+            <h3 id="english">해외영화</h3>
+            <a href="https://www.youtube.com/embed/hU-BFuTNJNc"><img src = "images/eng_1.jpg"></a>
+            <a href="https://www.youtube.com/embed/XdbRsILsJyM"><img src = "images/eng_2.jpg"></a>
+            <a href="https://www.youtube.com/embed/d2VN6NNa9BE"><img src = "images/eng_3.jpg"></a>
+            <a href="https://www.youtube.com/embed/Qei594KgLgM"><img src = "images/eng_4.jpg"></a>
+            <a href="https://www.youtube.com/embed/aoT4RjVq41Y"><img src = "images/eng_5.jpg"></a>
+            <a href="https://www.youtube.com/embed/RI-hvj-kZlw"><img src = "images/eng_6.jpg"></a>
+
+        </ul>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
